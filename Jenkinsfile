@@ -1,7 +1,7 @@
 #!/bin/groovy
 def tomcatWeb = "E:\\Apache Software Foundation\\Tomcat 9.0\\webapps"
 def tomcatBin = "E:\\Apache Software Foundation\\Tomcat 9.0\\bin"
-def mvnHome = tool name:'Maven', type:'maven'
+def mvnHome = 'tool' name:'Maven', type:'maven'
 
 pipeline {
       agent any
