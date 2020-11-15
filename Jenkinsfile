@@ -1,5 +1,4 @@
 node {
-    agent any
     def tomcatWeb = "E:\\Apache Software Foundation\\Tomcat 9.0\\webapps"
     def tomcatBin = "E:\\Apache Software Foundation\\Tomcat 9.0\\bin"
     stages {
