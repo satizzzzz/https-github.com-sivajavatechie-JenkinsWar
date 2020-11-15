@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Building War'){
             steps {
-                
+                withMaven(maven : 'apache-maven-3.6.3')
                 bat "${mvnHome}/bin/mvn package"
             }
         }
