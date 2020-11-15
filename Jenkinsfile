@@ -1,7 +1,7 @@
 node {
     def tomcatWeb = "E:\\Apache Software Foundation\\Tomcat 9.0\\webapps"
     def tomcatBin = "E:\\Apache Software Foundation\\Tomcat 9.0\\bin"
-    stages {
+ 
         stage('git checkout') {
             steps {
                 git "https://github.com/satizzzzz/https-github.com-sivajavatechie-JenkinsWar.git"
@@ -23,5 +23,5 @@ node {
                bat "${tomcatBin}\\JenkinsWar.war\\startup.bat"
            }
         }
-    }
+    
 }
