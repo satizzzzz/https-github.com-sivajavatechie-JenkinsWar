@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Starting tomcat'){
             steps {
-               bat "${tomcatBin}\\JenkinsWar.war\\startup.bat"
+               bat "${tomcatBin}\\startup.bat"
            }
         }
     }
