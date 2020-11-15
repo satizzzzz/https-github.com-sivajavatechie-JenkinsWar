@@ -5,7 +5,7 @@ def tomcatBin = "E:\\Apache Software Foundation\\Tomcat 9.0\\bin"
 pipeline {
       agent any
       tools {
-        maven 'Maven 3.3.9'
+        maven 'Maven 3.6.3'
     
     }
     stages{  
