@@ -4,6 +4,10 @@ def tomcatBin = "E:\\Apache Software Foundation\\Tomcat 9.0\\bin"
 
 pipeline {
       agent any
+      tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
     stages{  
         stage('git checkout') {
             steps {
@@ -12,8 +16,7 @@ pipeline {
         }
         stage('Building War'){
             steps {
-                withMaven(maven : 'apache-maven-3.6.3')
-                bat "${mvnHome}/bin/mvn package"
+                bat 'mvn package'
             }
         }
         stage('deploying War'){
