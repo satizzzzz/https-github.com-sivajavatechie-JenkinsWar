@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Starting tomcat'){
             steps {
-                  bat "start cmd.exe /c E:\\Apache Software Foundation\\Tomcat 9.0\\binstartup.bat""
+                  bat "start cmd.exe /c E:\\Apache Software Foundation\\Tomcat 9.0\\binstartup.bat"
            }
         }
     }
