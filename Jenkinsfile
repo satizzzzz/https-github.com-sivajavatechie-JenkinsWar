@@ -3,6 +3,9 @@ def tomcatWeb = "E:\\Apache Software Foundation\\Tomcat 9.0\\webapps"
 
 pipeline {
       agent any
+      triggers{
+      pollSCM('* * * * *')
+    }
       tools {
         maven 'maven-3.6'
     
